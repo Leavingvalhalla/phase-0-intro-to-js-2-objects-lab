@@ -1,4 +1,4 @@
-const employee = { name: "Bob", streetAddress: "124 Sunnyside Dr." };
+const employee = { name: "zach", streetAdress: "123 Sunset Blvd" };
 
 function updateEmployeeWithKeyAndValue(object, key, value) {
   return { ...object, [key]: value };
@@ -19,5 +19,3 @@ function destructivelyDeleteFromEmployeeByKey(object, key) {
   delete object[key];
   return object;
 }
-
-console.log(deleteFromEmployeeByKey(employee, "name"));
